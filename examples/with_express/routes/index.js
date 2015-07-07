@@ -10,9 +10,8 @@ var DZ = require('../../../'),
 
 exports.index = function(req, res) {
 
-	var redirectUrl = 'http://192.168.0.10:5000/deezer/callback';
-	var permissions = ['basic_access', 'manage_library'];
-	var authLink = deezer.getLoginUrl(appId, redirectUrl, permissions);
+	var permissions = ['basic_access', 'manage_library'],
+		authLink = deezer.getLoginUrl(appId, appProperties.callback, permissions);
 
 	if (!req.session.lang) {
 		req.session.lang = "es";
