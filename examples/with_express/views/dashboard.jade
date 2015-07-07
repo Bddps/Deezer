@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  #dashboardContent
+    h1= title
+  
+    form(action='./clone/')
+      p You playlists:
+      | #{playlist}
+      br
+      input.input(type='text' placeholder='Playlist to clone' name='playlist')
+      br
+      input.input(type='text' placeholder='Your playlist' name='playlistTo')
+      br
+      br
+      a(href='./about/deezerid')
+        | #{how}
+      br
+      br
+      button.button(type='submit')
+        i.fa.fa-database
+        | #{buttonTitle}
+
+  footer
+    p Deezerlist clone is created powered by: 
+      a(href='http://twitter.com/Bdps_') Bdps_ 
+      |&nbsp;  All rights reserved 2015.
+

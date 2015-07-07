@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  #content
+    #langOption
+      if lang == 'es'
+        a.lang(href='./en') ENGLISH
+      else
+        a.lang(href='./es') SPANISH
+
+    h1= title
+   
+    p= description
+    a(href='#{authLink}')= aLink
+
+    footer
+      p Deezerlist clone is created powered by: 
+        a(href='http://twitter.com/Bdps_') Bdps_ 
+        |&nbsp;  All rights reserved 2015.

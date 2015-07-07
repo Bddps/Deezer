@@ -1,0 +1,12 @@
+{
+  "name": "Deezerlist-clone",
+  "version": "0.0.1",
+  "description": "Clone your Deezerlists",
+  "private": true,
+  "dependencies": {
+    "request": "~2.27.0",
+    "lodash": "~1.3.1",
+    "express": "3.2.6",
+    "jade": "*"
+  }
+}
