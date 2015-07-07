@@ -1,1 +1,1 @@
-web: node app.js
+web: node ./examples/with_express/app.js
