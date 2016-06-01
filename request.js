@@ -11,27 +11,7 @@ var request			= require('request'),
 	handleApiError	= require('./util/apiError'),
 	util			= require('util');
 
-
-
-
-
-/**
- * Core API request logic
- */
-
 module.exports = {
-
-
-	/**
-	 * Send an arbitrary API request to Deezer
-	 *
-	 * @param {String} accessToken			(the OAuth token representing a user's session)
-	 * @param {Object} options
-	 *		resource {String}				(the string name of resource, e.g. 'album')
-	 *		method {HTTPMethod|undefined}	(the REST method [defaults to 'get'])
-	 * @param {Function} cb
-	 *		@param {Error|null} err
-	 */
 
 	request: function (accessToken, options, cb) {
 

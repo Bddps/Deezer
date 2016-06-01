@@ -11,7 +11,7 @@ var DZ = require('../../../'),
 exports.index = function(req, res) {
 
 	var permissions = ['basic_access', 'manage_library'],
-		authLink = deezer.getLoginUrl(appId, appProperties.callback, permissions);
+		authLink = deezer.getLoginUrl(appId, appProperties.callbackdev, permissions);
 
 	if (!req.session.lang) {
 		req.session.lang = "es";
